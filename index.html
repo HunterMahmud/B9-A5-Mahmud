@@ -1,12 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    
-</body>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Pribahan</title>
+    <!-- tailwind and daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .font-inter{
+            font-family: "Inter", sans-serif;
+        }
+        .font-raleway{            
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
+
+  </head>
+  <body class="m-0 p-0 font-raleway">
+    <header>
+        <nav class="navbar bg-white container mx-auto lg:px-24 px-8 py-5">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost p-0 lg:p-4 lg:hidden text-[#030712B3]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 p-0 lg:p-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-100 rounded-box w-52"
+                >
+                  <li><a class="text-[#030712B3]">Home</a></li>
+                  <li><a class="text-[#030712B3]">About</a></li>
+                  <li><a class="text-[#030712B3]">Destination</a></li>
+                  <li><a class="text-[#030712B3]">Search</a></li>
+                </ul>
+              </div>
+              <a
+                class="btn btn-ghost font-extrabold text-[#030712] hover:bg-white text-4xl lg:text-4xl p-1 lg:px-4 "
+                >Nova-Ticket</a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li>
+                  <a class="hover:text-[#1DD100] text-[#030712B3] hover:bg-white"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-[#1DD100] text-[#030712B3] hover:bg-white"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-[#1DD100] text-[#030712B3] hover:bg-white"
+                    >Destination</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:text-[#1DD100] text-[#030712B3] hover:bg-white"
+                    >Search</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              
+               <div class="btn border-[#1cd10087] border-solid border-2 bg-[#1DD1001A] hover:bg-[#1cd10037] flex lg:gap-1">
+                  <a
+                  class="text-xl text-[#1DD100] font-bold p-2 lg:px-4"
+                  >Bus</a
+                >
+                <img src="./images/bus-icon.png" alt="" />
+               </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section>
+            <div class="card w-full bg-base-100 shadow-xl image-full">
+                <figure><img src="./images/banner.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+  </body>
 </html>
