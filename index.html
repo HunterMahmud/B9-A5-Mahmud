@@ -28,7 +28,9 @@
   </head>
   <body class="m-0 p-0 font-raleway">
     <header>
-        <nav class="navbar bg-white container mx-auto lg:px-24 px-8 py-5">
+      <!-- navbar started here -->
+        <nav class="flex justify-center items-center">
+          <div class="navbar  container mx-auto  py-7 bg-white max-w-screen-xl px-4 lg:px-0">
             <div class="navbar-start">
               <div class="dropdown">
                 <div
@@ -100,21 +102,65 @@
                 <img src="./images/bus-icon.png" alt="" />
                </div>
             </div>
-          </nav>
+          </div>
+        </nav>
+          <!-- navbar ends here  -->
+
+          <!-- banner start here  -->
+          <section class="flex justify-center px-4 lg:px-0">
+            <div class="flex flex-col gap-5 lg:gap-8 bg-[linear-gradient(45deg,rgba(3,7,18,0.5),rgba(3,7,18,0)),url('./images/banner.png')] bg-no-repeat bg-cover h-96 lg:h-[500px] bg-center w-full max-w-screen-xl text-white items-center text-center justify-center rounded-2xl">
+              <h1 class=" font-extrabold text-6xl">End-to-End Travel with<br><span class="text-[#1DD100]">Nova Paribahan</span></h1>
+              <p class="font-inter font-normal text-lg max-w-[80%]">Embark on a Journey with Nova-Travel: Discover Unforgettable Adventures, Immerse in Exotic Cultures, and Create Timeless Memories. Your Passport to Extraordinary Experiences Awaits!</p>
+              <button class="btn border-none bg-[#1DD100] text-xl font-bold"><a href="#">Buy Tickets</a></button>
+            </div>
+          </section>
+          <!-- banner ends here  -->
     </header>
     <main>
-        <section>
-            <div class="card w-full bg-base-100 shadow-xl image-full">
-                <figure><img src="./images/banner.png" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
+      <!-- best offer for you section start here  -->
+        <section class="flex my-16 justify-center items-center">
+          <div class="flex flex-col w-full max-w-screen-xl gap-12 px-4 lg:px-0 items-center">
+            <h2 class="text-4xl font-bold text-center">Best offers for you</h2>
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-7 w-full">
+             <div class="flex px-7 justify-around items-center bg-[#FFBF0F] rounded-3xl w-full lg:w-1/2">
+               <div>
+                 <h3 class="font-extrabold text-4xl font-inter">15% OFF</h3>
+                 <p class="font-bold">on your next purchase</p>
+                 <p>use by January 2024 </p>
+               </div>
+               <div><img src="./images/cupon-devider.png" alt=""></div>
+               <div>
+                <h3 class="text-2xl lg:text-4xl font-bold">NEW15</h3>
+                <p class="text-xl font-medium">Coupon Code</p>
               </div>
+             </div>
+             <div class="flex  justify-around items-center px-7 bg-[#F78C9C] rounded-3xl w-full lg:w-1/2">
+               <div>
+                 <h3 class="font-extrabold text-4xl font-inter">20% OFF</h3>
+                 <p class="font-bold">on your next purchase</p>
+                 <p>use by January 2024 </p>
+               </div>
+               <div><img src="./images/cupon-devider.png" alt=""></div>
+               <div>
+                 <h3 class="text-2xl lg:text-4xl font-bold">Couple20</h3>
+                 <p class="text-xl font-medium">Coupon Code</p>
+               </div>
+             </div>
+            </div>
+            <div class="btn max-w-[200px] border-[#1cd10087] border-solid border-2 bg-[#1DD1001A] hover:bg-[#1cd10037] flex lg:gap-1">
+             <a
+             class="text-xl text-[#1DD100] font-bold p-2 lg:px-4"
+             >See All Offers</a
+           >
+           
+          </div>
+       </div>
+        </section>
+        <!-- best offer for you section start here  -->
+        <section>
+          
         </section>
     </main>
   </body>
 </html>
+
