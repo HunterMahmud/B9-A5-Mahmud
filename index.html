@@ -278,8 +278,8 @@
         <div
           class="flex items-center justify-center max-w-screen-xl w-full my-12"
         >
-          <div class="flex bg-white w-[90%] lg:w-full rounded-2xl">
-            <div class="flex flex-col gap-5 w-[70%] p-7">
+          <div class="flex flex-col lg:flex-row bg-white w-[90%] lg:w-full justify-center items-center rounded-2xl">
+            <div class="flex flex-col gap-5 lg:w-[70%] w-full p-7">
               <h2 class="font-semibold text-2xl">Select Your Seat</h2>
               <hr class="border-t border-dashed border-gray-500" />
 
@@ -294,8 +294,30 @@
                 </div>
               </div>
               <hr class="border-t border-dashed border-gray-500" />
-              <div class="bg-red-500">stearing</div>
+              
               <div class="font-inter flex flex-col items-center justify-center gap-5">
+                
+                <div class="flex w-full gap-2 items-center justify-around">
+                  <p></p>
+                  <div
+                    class="flex p-3 px-10 rounded-xl bg-white w-16 justify-center items-center"
+                  >
+                    
+                  </div>
+                  <div
+                    class="flex p-3 px-10 rounded-xl bg-white w-16 justify-center items-center"
+                  >
+                  
+                  </div>
+                  <div
+                    class="flex p-3 px-10 rounded-xl bg-white w-16 justify-center items-center"
+                  >
+                    
+                  </div>
+                  
+                    <img class="flex px-3 py-3 rounded-xl bg-[#F7F8F8] w-16 justify-center items-center" src="./images/steering.png" alt="">
+                  
+                </div>
                 <div class="flex w-full gap-2 items-center justify-around" id="A">
                   <p>A</p>
                   <div
@@ -569,12 +591,12 @@
               </div>
             </div>
 
-            <div class="w-[50%] flex flex-col gap-5 p-3 py-7">
+            <div class="lg:w-[50%] w-full flex flex-col gap-5 lg:p-3 p-5 py-7">
               <h1 class="font-semibold text-2xl">Select Your Seat</h1>
               <hr class="border-t border-dashed border-gray-500" />
               <div class="flex flex-col p-4 gap-3 font-inter bg-[#F7F8F8] rounded-xl">
-                <div class="flex justify-between">
-                  <h4>Seat</h4>
+                <div class="flex justify-between font-bold">
+                  <h4>Seat <span class="font-normal text-xs px-0.5 rounded-full bg-[#1DD100]">4</span></h4>
                   <h4>Class</h4>
                   <h4>Price</h4>
                 </div>
@@ -600,7 +622,7 @@
                 </div>
                 <div class="flex justify-between bg-white py-2 px-1 rounded-lg">
                   <input class="w-full" type="text" name="" id="coupon">
-                  <button class="bg-[#1DD100] rounded-lg p-1">Apply</button>
+                  <button class="bg-[#1DD100] rounded-lg p-2">Apply</button>
                 </div>
                 <div class="flex justify-between">
                   <h4>Grand Total</h4>
@@ -614,6 +636,10 @@
               <label for="email">Email ID</label>
               <input class="p-4 rounded-xl border-2  border-solid border-[#0307121A]" placeholder="Enter your email id" type="email" name="email" id="email">
               <button class="btn hover:bg-[#1D1A] bg-[#1DD100]" type="submit">Next</button>
+              <div class="flex justify-between">
+                <p><a class="underline" href="#">Terms ans Conditions</a></p>
+                <p><a class="underline" href="#">Cancellation Policy</a></p>
+              </div>
 
             </div>
           </div>
@@ -622,5 +648,6 @@
       </section>
       <!-- purchase ticket section ends here  -->
     </main>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
