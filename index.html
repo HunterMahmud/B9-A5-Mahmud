@@ -607,19 +607,19 @@
                 <hr>
                 <div class="flex justify-between">
                   <h4>Total Price</h4>
-                  <h4>BDT 1100</h4>
+                  <h4>BDT <span id="total-price">0</span></h4>
                 </div>
-                <div class="flex justify-between">
+                <div class="hidden justify-between">
                   <h4>Discount Price</h4>
-                  <h4>BDT 100</h4>
+                  <h4>BDT <span id="discount-price">0</span></h4>
                 </div>
                 <div class="flex justify-between bg-white py-2 px-1 rounded-lg">
-                  <input class="w-full" type="text" name="" id="coupon">
-                  <button class="bg-[#1DD100] rounded-lg p-2">Apply</button>
+                  <input id="coupon-input" class="w-full" type="text" name="" id="coupon">
+                  <button id="apply" class="bg-[#1DD100] disabled:bg-gray-400 rounded-lg p-2" disabled>Apply</button>
                 </div>
                 <div class="flex justify-between">
                   <h4>Grand Total</h4>
-                  <h4>BDT 1000</h4>
+                  <h4>BDT <span id="grand-total">0</span></h4>
                 </div>
               </div>
               <label for="name">Passenger Name*</label>
