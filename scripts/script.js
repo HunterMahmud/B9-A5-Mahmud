@@ -39,7 +39,7 @@ function action(event){
         }
     }
     else{
-        alert("You can't select more than 4 tickets.")
+        alert("চার টার বেশি টিকেট একবারে কেনা যাবে না।")
     }
     
 }
