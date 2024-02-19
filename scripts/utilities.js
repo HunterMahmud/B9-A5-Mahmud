@@ -51,7 +51,8 @@ function checkValidation() {
     let discount = document.getElementById("discount");
     discount.classList.remove("hidden");
   } else {
-    alert("Wrong coupon code please check.");
+    // alert("Wrong coupon code please check.");
+    alert('ভাই পাকনামি করে লাভ নাই, তোমার কুপন কোড কিন্তু ঠিক নাই।');
   }
 }
 
