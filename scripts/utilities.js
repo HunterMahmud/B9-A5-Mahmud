@@ -16,7 +16,7 @@ function checkNumber(){
   let number = parseInt(numberStr);
   let ticket = getValue('seat-cnt');
   //console.log(numberStr.length, number);
-  if(numberStr.length > 0 && number > 0 && ticket>0){
+  if(numberStr.length > 0 && ticket>0){
     let nextBtn = document.getElementById("next-btn");
     nextBtn.removeAttribute('disabled');
   }
