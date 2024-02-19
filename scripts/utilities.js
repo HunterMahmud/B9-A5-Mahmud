@@ -7,12 +7,49 @@ function applyEnable() {
   document.getElementById("apply").removeAttribute("disabled");
 }
 
+function getValue(id) {
+  return parseInt(document.getElementById(id).innerText);
+}
+
+function checkNumber(){
+  let numberStr = document.getElementById("phone").value;
+  let number = parseInt(numberStr);
+  let ticket = getValue('seat-cnt');
+  //console.log(numberStr.length, number);
+  if(numberStr.length > 0 && number > 0 && ticket>0){
+    let nextBtn = document.getElementById("next-btn");
+    nextBtn.removeAttribute('disabled');
+  }
+  else{
+    let nextBtn = document.getElementById('next-btn');
+    nextBtn.setAttribute('disabled','');
+  }
+}
+
+
 function checkValidation() {
   const coupon = document.getElementById("coupon-input");
   if (coupon.value === "NEW15") {
-    return;
+    let final = getValue("grand-total");
+    let discountPrice = (final / 100) * 15;
+    final = final - discountPrice;
+    SetInnerText("discount-price", discountPrice);
+    SetInnerText("grand-total", final);
+    let applyDiv = document.getElementById("apply-div");
+    applyDiv.classList.add("hidden");
+    let discount = document.getElementById("discount");
+    discount.classList.remove("hidden");
   } else if (coupon.value === "Couple 20") {
-    return;
+    let final = getValue("grand-total");
+
+    let discountPrice = (final / 100) * 20;
+    final = final - discountPrice;
+    SetInnerText("discount-price", discountPrice);
+    SetInnerText("grand-total", final);
+    let applyDiv = document.getElementById("apply-div");
+    applyDiv.classList.add("hidden");
+    let discount = document.getElementById("discount");
+    discount.classList.remove("hidden");
   } else {
     alert("Wrong coupon code please check.");
   }

@@ -168,7 +168,7 @@
                 <img class="h-full" src="./images/cupon-devider.png" alt="" />
               </div>
               <div>
-                <h3 class="text-2xl lg:text-4xl font-bold">Couple20</h3>
+                <h3 class="text-2xl lg:text-4xl font-bold">Couple 20</h3>
                 <p class="text-xl font-medium">Coupon Code</p>
               </div>
             </div>
@@ -218,7 +218,7 @@
                   class="btn font-inter border-[#1cd10087] border-solid border-2 bg-[#1DD1001A] hover:bg-[#1cd10037] flex lg:gap-1"
                 >
                   <img src="./images/seat-green.png" alt="" />
-                  <span class="text-xl text-[#1DD100] font-bold">40</span>
+                  <span id="seat-left" class="text-xl text-[#1DD100] font-bold">40</span>
                   <a class="text-xl text-[#1DD100] font-bold p-1 lg:px-2"
                     >Seats Left</a
                   >
@@ -609,11 +609,12 @@
                   <h4>Total Price</h4>
                   <h4>BDT <span id="total-price">0</span></h4>
                 </div>
-                <div class="hidden justify-between">
+                <div id="discount" class="hidden flex justify-between">
                   <h4>Discount Price</h4>
                   <h4>BDT <span id="discount-price">0</span></h4>
                 </div>
-                <div class="flex justify-between bg-white py-2 px-1 rounded-lg">
+                
+                <div id="apply-div" class="flex justify-between bg-white py-2 px-1 rounded-lg">
                   <input id="coupon-input" class="w-full" type="text" name="" id="coupon">
                   <button id="apply" class="bg-[#1DD100] disabled:bg-gray-400 rounded-lg p-2" disabled>Apply</button>
                 </div>
@@ -625,10 +626,10 @@
               <label for="name">Passenger Name*</label>
               <input class="p-4 rounded-xl border-2 border-solid border-[#0307121A]" placeholder="Enter your name" type="text" name="name" id="name">
               <label for="phone">Phone Number*</label>
-              <input class="p-4 rounded-xl border-2  border-solid border-[#0307121A]" placeholder="Enter your phone number" type="tel" name="phone" id="phone">
+              <input class="p-4 rounded-xl border-2  border-solid border-[#0307121A]" placeholder="Enter your phone number" type="number" name="phone" id="phone">
               <label for="email">Email ID</label>
               <input class="p-4 rounded-xl border-2  border-solid border-[#0307121A]" placeholder="Enter your email id" type="email" name="email" id="email">
-              <button class="btn hover:bg-[#1D1A] bg-[#1DD100]" type="submit">Next</button>
+              <button id="next-btn" class="btn hover:bg-[#1D1A] bg-[#1DD100]" type="submit" disabled>Next</button>
               <div class="flex justify-between">
                 <p><a class="underline" href="#">Terms ans Conditions</a></p>
                 <p><a class="underline" href="#">Cancellation Policy</a></p>
