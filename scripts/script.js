@@ -14,7 +14,9 @@ for(let ticket of tickets){
 
 document.getElementById("phone").addEventListener('keyup',checkNumber);
 
-
+document.getElementById('next-btn').addEventListener('click',(e)=>{
+    location.href = 'success.html';
+})
 
 function action(event){
     
